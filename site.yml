@@ -1,11 +1,11 @@
-title : Blog Title
-tagline: Blog Tagline
-author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+title : 張旭
+tagline: 中國 海南 陵水 臺灣 南崁 彰化 臺北
+author : zx1986
+  name : 旭 張
+  email : zx1986@gmail.com
+  github : zx1986
+  twitter : zx1986
+  feedburner : zx1986
 
 navigation :
   - archive.html
@@ -13,4 +13,3 @@ navigation :
   - categories.html
   - pages.html
   - about.md
-  

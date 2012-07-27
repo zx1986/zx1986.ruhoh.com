@@ -3,12 +3,12 @@
 
 RuhohSpec: '1.0'
 theme : twitter
-production_url : http://sample.com
+production_url : http://zx1986.ruhoh.com
 
 posts:
-  permalink: /:categories/:title/
-  summary_lines: 20
-  latest: 10
+  permalink: /:title/
+  summary_lines: 2000
+  latest: 1
 
 pages:
   permalink: 'pretty'
