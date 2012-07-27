@@ -1,7 +1,7 @@
-title : 張旭
+title : zx1986
 tagline : 中國 海南 陵水 臺灣 南崁 彰化 臺北
 author : zx1986
-name : Chang Hsu
+name : 張 旭
 email : zx1986@gmail.com
 github : zx1986
 twitter : zx1986
@@ -9,7 +9,5 @@ feedburner : zx1986
 
 navigation :
   - archive.html
-  - tags.html
   - categories.html
-  - pages.html
   - about.md

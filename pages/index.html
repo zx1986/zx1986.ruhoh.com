@@ -1,18 +1,12 @@
 ---
-title: Home
-description:
+title: 張旭
+description: zx1986
 ---
-
-<h2>Latest Posts</h2>
 
 {{# posts_latest }}
 <div class="post">
-  <h3 class="title"><a href="{{url}}">{{title}}</a> <span class="date">{{ date }}</span></h3>
-
-  {{{ summary }}}
-
-  <div class="more">
-    <a href="{{url}}" class="btn">read more ...</a>
-  </div>
+    <h3 class="title"><a href="{{ url }}">{{ title }}</a><span class="date">{{ date }}</span></h3>
+  <br />
+  {{{ content }}}
 </div>
 {{/ posts_latest }}

@@ -6,7 +6,7 @@ theme : twitter
 production_url : http://zx1986.ruhoh.com
 
 posts:
-  permalink: /:title/
+  permalink: /:filename
   summary_lines: 2000
   latest: 1
 
