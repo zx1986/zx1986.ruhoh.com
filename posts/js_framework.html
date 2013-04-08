@@ -1,0 +1,121 @@
+【jQuery】
+
+jQuery 雖然稱爲 Javascript 的「Framework」，但它其實更像一套「Toolkit」。
+而且是一套非常強的 Javascript Toolkit，族繁不及備載的外掛、五花八門的特效等等。
+
+jQuery 包好了許多函式，叫用這些函式，可以很快速地完成從前需要花許多功夫的效果。
+在 jQuery 這個自成體系的工具包裡，DOM 的操作變得簡單、易用、快速。
+除了這些，jQuery 也提供了它自成一系的 Ajax 操作，還有各種動畫特效等。
+
+撰寫 Javascript 很多時候都是在處理或控制 DOM 元素。
+修改某個 div 裡的內容、刪除某列 tr、爲某個 id 的元素加上指定的 class ...
+許多想得到的 DOM 操作，使用 jQuery 的話，可以省下不少程式碼數量。 
+
+引入 jQuery：
+<pre class="brush:xml">
+<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+</pre>
+
+在 HTML 文件中引入 jQuery 函式庫之後，就可以透過「jQuery」或其別名「$」使用它。
+例如我們希望使用者在整個 DOM 文件建構好之後，再來執行 Javascript 的直譯動作，
+Javascript 會這樣控制：
+<pre class="brush:js">
+window.onReady = function()
+{
+    // your codes
+}
+</pre>
+在 jQuery 裡，則是這樣作：
+<pre class="brush:js">
+jQuery(document).ready(function()
+{
+    // your codes
+});
+</pre>
+或是
+<pre class="brush:js">
+$(document).ready(function()
+{
+    // your codes
+});
+</pre>
+另一種比較嚴謹的做法是：
+<pre class="brush:js">
+(function($){
+    $(document).ready(function(){
+        // your codes
+    });
+}(jQuery));
+</pre>
+最後一種寫法直接定義並執行一個匿名函式 function($)，
+function($) 中的 $ 指的是要傳入這個匿名函式的參數，
+而這個傳入的參數，寫在最後一行的掛號裡，即 (jQuery)。
+這樣的作法可以避免跟其他也使用 $ 作爲名稱空間 prefix 的框架衝突，
+如此一來，在這個匿名函式 function($) 的範圍內，$ 確定僅是 jQuery。
+
+如果有用 Javascript 做過 DOM 元素控制（寫過 Javascript 幾乎都做過），
+那麼改用 jQuery 來作同樣事情時，一定會驚豔於 jQuery 的簡便、易用。
+例如選擇 DOM 裡面某個 id 的元素，單純的 Javascript 寫法是：
+<pre class="brush:js">
+var a = document.getElementById("some_id");
+</pre>
+使用 jQuery 則可以這樣寫：
+<pre class="brush:js">
+var a = $("#some_id");
+</pre>
+
+＊
+
+【Mootools】
+
+MooTools 是一個用 JavaScript 原本應有的方式來寫 JavaScript 的框架（Framework）。
+其立意是實作一個跟 JavaScript 非常相似的 API 並且針對各個部分加以強化。
+
+引入 Mootools：
+<pre class="brush:xml">
+<script src="http://mootools.net/download/get/mootools-core-1.3-full-compat.js"></script>
+</pre>
+
+＊
+
+【YUI】
+
+YUI 使用：
+<pre class="brush:xml"><script src="http://yui.yahooapis.com/3.1.1/build/yui/yui-min.js"></script>
+<script src="http://yui.yahooapis.com/3.2.0/build/simpleyui/simpleyui-min.js"></script>
+</pre>
+＊
+
+【ExtJS】
+
+ExtJS 使用：
+<pre class="brush:xml"><script src="http://rightjs.org/hotlink/right.js"></script>
+</pre>
+＊
+
+【RightJS】
+
+RightJS 使用：
+<pre class="brush:xml"><link rel="stylesheet" type="text/css" href="Your ExtJS Path/resources/css/ext-all.css" />
+<script type="text/javascript" src="Your ExtJS Path/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="Your ExtJS Path/ext-all.js"></script>
+</pre>
+
+＊
+
+Roadmap
+
+http://docs.jquery.com/JQuery_1.5_Roadmap
+http://www.sencha.com/products/js/roadmap.php
+http://yuilibrary.com/projects/yui3/roadmap
+http://rightjs.org/blog
+
+＊
+
+Reference：
+01. http://www.ibm.com/developerworks/cn/web/wa-jsframeworks
+02. http://www.ibm.com/developerworks/web/library/wa-aj-extjs
+03. http://clay0529.blogspot.com/2010/02/yui-3.html
+04. http://yufei34514.blog.163.com/blog/static/407836552009114154340
+05. http://www.ajaxray.com/blog/2009/04/05/extjs-quick-start-guide-for-jquery-developers-javascript-howto
+06. http://jqueryvsmootools.com
